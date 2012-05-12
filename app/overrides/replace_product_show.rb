@@ -6,8 +6,7 @@ Deface::Override.new(:virtual_path => %q{spree/products/show},
   <% @body_id = 'product-details' %>
 
     <%= content_for :banner do %>
-      <h1>Products</h1>
-      <%= image_tag "store/satellite-radios-bg.jpg", :alt => "Satellite Radios" %>
+      <h1>Productos</h1>
     <% end %>
 
     <h2><%= @product.name %></h2>
