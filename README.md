@@ -1,3 +1,5 @@
+This is a fork of the spree_rdr_theme
+
 SUMMARY
 -------
 
