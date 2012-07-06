@@ -25,6 +25,10 @@ body, select, input, textarea {
   color: #222;
 }
 
+body {
+    background: black;
+}
+
 #main p {
   line-height: 1.4em;
 }
