@@ -20,7 +20,7 @@ Deface::Override.new(:virtual_path => %q{spree/layouts/spree_application},
           <form action="#" >
           </form>
           <%= form_tag products_url, :method => :get do %>
-            <input type="search" id="s1" class="empty" name="keywords" placeholder="Search Railsdog Radio" style="margin-top: 2px; margin-left: 430px">
+            <input type="search" id="s1" class="empty" name="keywords" placeholder="Buscar en EstiloVZLA" style="margin-top: 2px; margin-left: 430px">
           <% end %>
         </header>
         
