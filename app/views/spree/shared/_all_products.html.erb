@@ -8,11 +8,13 @@
     </ul>
   <% else %>
     <h2>All Products</h2>
+    <% if (first = Spree::Taxonomy.where(:name => "Categories").first) %>
     <ul>
-      <% Spree::Taxonomy.where(:name => "Categories").first.root.children.each_with_index do |taxon,i| %>
+      <% first.root.children.each_with_index do |taxon,i| %>
         <li><%= raw link_to(taxon.name, seo_url(taxon)) %></li>
       <% end %>
-    </ul>
+    </ul>    
+    <% end %>
   <% end %>
 </div>
 <% if Rails.application.railties.all.map(&:railtie_name).include? "spree_recently_viewed" %>
