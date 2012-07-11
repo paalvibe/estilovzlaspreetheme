@@ -53,17 +53,18 @@ Deface::Override.new(:virtual_path => %q{spree/layouts/spree_application},
     <footer data-hook="footer" style="margin-top: 0px; width: 1000px; margin: 0 auto;">
       <div class="inner" style="height: 200px">
         <div id="contact-us">
-          <h3>Contact Us</h3>
+          <h3>Contacto</h3>
           <p>
            0416 939 4436<br>
-          <a href="mailto:ventas@estilovzla.com">sales@estilovzla.com</a>
+           <p>
+          sales (a) estilovzla.com<br>          
           </p>
         </div>
     
         <div id="social">
           <h3>Social</h3>
           <p>
-          <a href="http://www.facebook.com/pages/EstiloVZLA/335067923175897" id="facebook"><span>Facebook</span></a>
+          <a href="http://www.facebook.com/estilovzla" id="facebook"><span>Visítanos en Facebook</span></a>
           <a href="http://twitter.com/estilovzla" id="twitter"><span>Twitter</span></a>
           </p>
         </div>
@@ -75,7 +76,7 @@ Deface::Override.new(:virtual_path => %q{spree/layouts/spree_application},
           </p>
         </div>
     
-        <p id="copyright">&copy; Copyright <%= Time.zone.now.year %> Estilo VZLA. Todos los derechos reservados</p>    
+        <p id="copyright">&copy; <%= Time.zone.now.year %> Estilo VZLA. Todos los derechos reservados</p>    
       </div>
     </footer>
 </body>})
