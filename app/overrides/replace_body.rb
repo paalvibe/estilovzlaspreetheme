@@ -57,7 +57,7 @@ Deface::Override.new(:virtual_path => %q{spree/layouts/spree_application},
           <p>
            0416 939 4436<br>
            <p>
-          sales (a) estilovzla.com<br>          
+          ventas (a) estilovzla.com<br>          
           </p>
         </div>
     
