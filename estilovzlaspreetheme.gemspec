@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'estilovzlaspreetheme'
-  s.version     = '0.1.4'
+  s.version     = '0.1.5'
   s.summary     = 'A Spree Commerce Theme'
 
   s.author        = 'Paal de Vibe'
