@@ -51,20 +51,7 @@ Deface::Override.new(:virtual_path => %q{spree/layouts/spree_application},
   </div>
 
     <footer data-hook="footer" style="margin-top: 0px; width: 1000px; margin: 0 auto;">
-      <div class="inner" style="height: 200px">
-        <div id="contact-us">
-          <h3>Contacto</h3>
-          <p>
-           0416 939 4436<br>
-           <p>
-          sales (a) estilovzla.com<br>          
-          </p>
-        </div>
-    
-        <div id="social">
-          <h3>Social</h3>
-          <p>
-          <a href="http://www.facebook.com/estilovzla" id="facebook"><span>Visítanos en Facebook</span></a>
+      <div class="inner" style="height: 2tanos en Facebook</span></a>
           <a href="http://twitter.com/estilovzla" id="twitter"><span>Twitter</span></a>
           </p>
         </div>
