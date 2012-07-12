@@ -34,7 +34,7 @@ Deface::Override.new(:virtual_path => %q{spree/products/show},
     
       <hr />
     
-      <p><button type="submit">Add to cart</button></p>
+      <p><button type="submit"><%= I18n.t(:add_to_cart) %></button></p>
     <% end %>
 
 </div>},

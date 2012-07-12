@@ -86,16 +86,16 @@ body#checkout div[role="checkout"] div#tabs ul {
 body#checkout div[role='checkout'] div#tabs li {
   display: inline;
   float: left;
-  background-color: #eceded;
-  border-bottom: 5px solid #b7cbe9;
+  background-color: #222222;
+  border-bottom: 5px solid #555555;
   width: 130px;
   height: 70px;
   padding-top: 10px;
 }
 
 body#checkout div[role='checkout'] div#tabs li.active {
-  background-color: #fff;
-  border: 5px solid #b7cbe9;
+  background-color: #333;
+  border: 5px solid #555555;
   border-bottom: none;
 }
 
@@ -129,7 +129,7 @@ body#checkout div[role='checkout'] div#tabs li.active span.title {
 }
 
 body#checkout div[role='content'] {
-  border: 5px solid #b7cbe9;
+  border: 5px solid #555555;
   font-size: 18px;
   color: #A0A0A0;
   width: 530px;
@@ -213,9 +213,9 @@ body#checkout div[role='content'] ul.fields select {
 
 body#checkout div[role='aside'] {
   border: 3px solid #eceded;
-  width: 250px;
+  width: 220px;
   float: left;
-  margin: 100px 0px 0px 22px;
+  margin: 100px -40px 0px 22px;
   padding: 10px;
   color: #7f7f7f;
   font-size: 14px;
@@ -272,6 +272,34 @@ body#checkout div[role='aside'] div[role='order'] tr td.price {
 body#checkout .hidden{
   display: none;
   visibility: visible;
+}
+
+body#checkout form.edit_order {
+    width: 660px;
+    /* border-top: 0px solid #555555; */
+    /* border-right: 5px solid #555555; */
+    /* border-bottom: 5px solid #555555; */
+    /* border-left: 5px solid #555555; */
+    background-color: #333333;
+}
+
+body#checkout form.edit_order {
+    background-color: #333333;
+    width: 660px;
+}
+
+body#checkout form#checkout_form_confirm {
+    
+   border-top: 0px solid #555555;
+    border-right: 5px solid #555555;
+    border-bottom: 5px solid #555555;
+    border-left: 5px solid #555555;
+    width: 650px;
+    
+}
+
+body#checkout form.edit_order fieldset {
+    padding: 10px;
 }
 
 /* End Styles for Checkout page */

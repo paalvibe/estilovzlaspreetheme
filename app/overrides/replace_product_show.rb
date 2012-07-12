@@ -12,7 +12,7 @@ Deface::Override.new(:virtual_path => %q{spree/products/show},
     <h2><%= @product.name %></h2>
     <div id="product-images" data-hook>
       <div id="main-image">
-        <%= render 'image' %>
+        <%= large_image(@product, :itemprop => "image") %>
       </div>
       <div id="thumbnails" data-hook>
         <%= render 'thumbnails', :product => @product %>
@@ -26,23 +26,23 @@ Deface::Override.new(:virtual_path => %q{spree/products/show},
             <%= hidden_field_tag (@product.has_variants? ? :quantity : "variants[#{@product.master.id}]"), 1, :class => "title", :size => 3 %>
 
             <dl class="part-numbers clearfix">
-              <dt>PART NUMBER</dt>
+              <dt><%= I18n.t(:part_number) %></dt>
               <dd><%= @product.sku %></dd>
             </dl>
 
             <dl class="prices clearfix">
-              <dt>Price</dt>
+              <dt><%= I18n.t(:price) %></dt>
               <dd><span class="price discounted"><%= number_to_currency (@product.price * 1.2) %></span></dd>
-              <dt>Sale Price</dt>
+              <dt><%= I18n.t(:sales_price) %></dt>
               <dd><span class="price selling"><%= number_to_currency (@product.price) %></span></dd>
             </dl>
             <dl class="shipping">
-              <dt>Shipping</dt>
-              <dd><span class="price">FREE</span></dd>
+              <dt><%= I18n.t(:shipping) %></dt>
+              <dd><span class="price">A acordar</span></dd>
             </dl>
             <dl class="stock">
-              <dt>In Stock</dt>
-              <dd><span class="stock"><%= @product.has_stock? ? "YES" : "NO" %></span></dd>
+              <dt>Disponible</dt>
+              <dd><span class="stock"><%= @product.has_stock? ? "SI" : "NO" %></span></dd>
             </dl>
  
             <hr />
@@ -72,12 +72,12 @@ Deface::Override.new(:virtual_path => %q{spree/products/show},
               </div>
             <% end%>
 
-          <p><button type="submit">Add to cart</button></p>
+          <p><button type="submit"><%= I18n.t(:add_to_cart) %></button></p>
         <% end %>
       </div>
     </div>
 
-    <div id="product-description" data-hook="product_description">
+    <div id="product-description" data-hook="product_description" style="margin-bottom: 40px">
         <%= product_description(@product) rescue t("product_has_no_description") %>
     </div>
 </div>},
