@@ -1,11 +1,10 @@
 <% if !current_user || !current_user.user_authentications %>
   <div id="social_login">
-    <h2>Sign In Using</h2>
-    <p>If you have an existing account with any of the following sites you can login here by clicking on the icon below.</p>
+    <h2><%= t(:sign_in_with_facebook) %></h2>
     <% Spree::AuthenticationMethod.where(:environment => ::Rails.env).each do |user| %>
       <p class="social_link">
-      <%= link_to "Sign in with #{user.provider.capitalize}", "/users/auth/#{user.provider}",
-      :title => "Sign in with #{user.provider}",
+      <%= link_to t(:sign_in_with, :provider => user.provider.capitalize), "/users/auth/#{user.provider}",
+      :title => t(:sign_in_with, :provider => user.provider),
       :class => "btn-auth btn-#{user.provider.downcase}" if user.active %>
       </p>
     <% end %>
